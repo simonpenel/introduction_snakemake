@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job       count
+------  -------
+all           1
+revert        1
+total         2
+
+Select jobs to execute...
+
+[Wed May  6 14:59:51 2026]
+rule revert:
+    input: concat_files_1_2.txt
+    output: reverted.txt
+    jobid: 1
+    reason: Updated input files: concat_files_1_2.txt
+    resources: tmpdir=/tmp
+
+[Wed May  6 14:59:51 2026]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed May  6 14:59:51 2026]
+localrule all:
+    input: reverted.txt
+    jobid: 0
+    reason: Input files updated by another job: reverted.txt
+    resources: tmpdir=/tmp
+
+[Wed May  6 14:59:51 2026]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2026-05-06T145951.160068.snakemake.log
