@@ -1,11 +1,13 @@
-# snakemake introduction
+# Introduction to snakemake
 
 ## Settings
 
-In terms of reproductiblity  and tp make python packahe management easier , it  is recommended to use _uv_ or _pixi_ to run _snakemake_.
+In terms of reproductiblity  and ease of use, it  is recommended to use _pixi_ (alternative to conda) or _uv_ ( python package manager ) to run _snakemake_.
 
 
-### Installing _uv_
+>[!TIP]
+>Install pixi
+>https://pixi-introduction-22dda7.pages.in2p3.fr/5
 
 
 ### 
