@@ -22,13 +22,10 @@ curl -fsSL https://pixi.sh/install.sh | sh
 ```
 
 >[!TIP]
->Install pixi
->https://pixi-introduction-22dda7.pages.in2p3.fr/5
-
->[!TIP]
 >More on pixi
 >https://pixi-introduction-22dda7.pages.in2p3.fr
 
+### First example
 
 Go in the directory _analyses/simple_example_ and install necessary tools, here snakemake:
 
@@ -38,10 +35,18 @@ pixi init .
 pixi workspace channel add bioconda
 pixi add snakemake
 ```
-Then test if snakeake is installed:
+
+Then test if snakemake is installed buy testing the version
 
 ```
 pixi run snakemake -v
+```
+
+If  snakemake is installed, test the script _simple_example.smk_  with the option _-n_
+
+```
+pixi run snakemake -s simple_example.smk -n
+
 ```
 
 ### 
