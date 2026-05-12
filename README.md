@@ -25,7 +25,7 @@ curl -fsSL https://pixi.sh/install.sh | sh
 >More on pixi
 >https://pixi-introduction-22dda7.pages.in2p3.fr
 
-### First example
+### First examples
 
 Go in the directory _analyses/simple_example_ and install necessary tools, here snakemake:
 
@@ -48,7 +48,7 @@ If  snakemake is installed, test the script _simple_example.smk_  with the optio
 pixi run snakemake -s simple_example.smk -n
 
 ```
-Rune the script on 1 process
+Run the script on 1 process
 
 ```
 pixi run snakemake -s simple_example.smk --jobs 1
@@ -59,6 +59,13 @@ Test the script _simple_example.smk_  again with the option _-n_
 
 ```
 pixi run snakemake -s simple_example.smk -n
+
+```
+
+Run the script simple_example_2.smk
+
+```
+pixi run snakemake -s simple_example_2.smk --jobs 1
 
 ```
 
