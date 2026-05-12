@@ -25,6 +25,10 @@ Go in the directory _analyses/simple_example_ and install necessary tools:
 
 ```
 cd analyses/simple_example
+pixi init .
+pixi workspace channel add conda-forge
+pixi workspace channel add bioconda
+pixi add snakemake
 ```
 
 
