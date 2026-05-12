@@ -48,5 +48,18 @@ If  snakemake is installed, test the script _simple_example.smk_  with the optio
 pixi run snakemake -s simple_example.smk -n
 
 ```
+Rune the script on 1 process
+
+```
+pixi run snakemake -s simple_example.smk --jobs 1
+
+```
+
+Test the script _simple_example.smk_  again with the option _-n_
+
+```
+pixi run snakemake -s simple_example.smk -n
+
+```
 
 ### 
