@@ -25,7 +25,7 @@ curl -fsSL https://pixi.sh/install.sh | sh
 >More on pixi
 >https://pixi-introduction-22dda7.pages.in2p3.fr
 
-### First examples
+## First examples
 
 Go in the directory _analyses/simple_example_ and install necessary tools, here snakemake:
 
@@ -69,4 +69,11 @@ pixi run snakemake -s simple_example_2.smk --jobs 1
 
 ```
 
-### 
+## Example in genomics
+
+```
+cd analyses/get_assemblies_list
+pixi init .
+pixi workspace channel add bioconda
+pixi add snakemake
+```
